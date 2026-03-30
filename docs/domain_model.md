@@ -63,14 +63,3 @@ Represents the current lighting settings active in a room.
       |
       +-- Guest --- modifies --> LightingState
 
----
-
-## Notes
-
-This model focuses on the core concepts needed for the prototype:
-
-- Define lighting settings  
-- Apply them to rooms  
-- View and modify room lighting  
-
-The model avoids technical details and focuses only on the structure of the system.
