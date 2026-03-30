@@ -49,16 +49,19 @@ Represents the current lighting settings active in a room.
 
 ## Simple Diagram
 
-Hotel
-├── Room ─── LightingState
-│ │
-│ └── LightingProfile
-│
-├── RoomType
-│
-├── Staff ─── manages ─── LightingProfile
-│
-└── Guest ─── modifies ─── LightingState
+    Hotel
+      |
+      +-- Room
+      |     |
+      |     +-- LightingState
+      |     |
+      |     +-- LightingProfile
+      |     |
+      |     +-- RoomType
+      |
+      +-- Staff --- manages ---> LightingProfile
+      |
+      +-- Guest --- modifies --> LightingState
 
 ---
 
